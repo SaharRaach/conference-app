@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+.profile-card {
+  border-left: 5px solid var(--accent-profile);
+}
+
+.profile-badge {
+  background-color: var(--badge-profile-bg);
+  color: #4f3582;
+}
+
+.profile-card p {
+  margin-bottom: 10px;
+}

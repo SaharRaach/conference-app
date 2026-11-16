@@ -1,0 +1,58 @@
+:host {
+  display: block;
+}
+
+.friends-card {
+  border-left: 5px solid var(--accent-friends);
+}
+
+.friends-badge {
+  background-color: var(--badge-friends-bg);
+  color: #4f3582;
+}
+
+.friends-content {
+  flex: 1;
+}
+
+.friend-inputs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.friend-inputs input {
+  font-family: Arial, sans-serif;
+  padding: 4px 8px;
+  border: 1px solid #9ca3af;
+  border-radius: 2px;
+  width: 210px;
+  min-width: 0;
+}
+
+.friends-list {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.friend-inputs input:focus {
+  outline: none;
+  border-color: var(--accent-notifications);
+  box-shadow: 0 0 0 1px var(--accent-notifications);
+}
+
+.friends-list .empty {
+  list-style: none;
+  margin-left: -20px;
+  color: #94a3b8;
+}
+
+@media (max-width: 700px) {
+  .friend-inputs {
+    flex-wrap: wrap;
+  }
+
+  .friend-inputs input {
+    flex: 1 1 150px;
+  }
+}

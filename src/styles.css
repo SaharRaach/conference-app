@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /* Brand & Header Colors */
+  --navy-dark: #0d3b66;
+  --blue-gradient-end: #1d5fa7;
+  --blue-active: #2563eb;
+  --blue-pill-bg: #e8f0fe;
+
+  /* Surfaces & Borders */
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-conf-card: #f8fafd;
+  --border-light: #dbe4ee;
+  --border-input: #cbd5e1;
+
+  /* Section Left-Border Accents */
+  --accent-profile: #1d5fa7;
+  --accent-friends: #16a34a;
+  --accent-notifications: #f59e0b;
+  --accent-conferences: #136f63;
+
+  /* Circular Icon Badge Backgrounds */
+  --badge-profile-bg: #e8eef7;
+  --badge-friends-bg: #e6f4ea;
+  --badge-notif-bg: #fef3c7;
+  --badge-calendar-bg: #e0f7fa;
+
+  /* Registration Button States */
+  --btn-green: #167c3c;
+  --btn-green-hover: #126631;
+  --btn-orange: #cc7000;
+  --btn-orange-hover: #b36200;
+  --btn-red: #c82333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: var(--bg-page);
+  color: #111827;
+  line-height: 1.5;
+}
+
+/* Shared Dashboard Section Card (Profil, Amis, Notifications) */
+.section-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 24px 28px;
+  margin: 16px auto;
+  max-width: 1100px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.section-card h2 {
+  color: var(--navy-dark);
+  font-size: 1.45rem;
+  margin-bottom: 12px;
+}
+
+/* Circular Left Icon Badges */
+.icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 8px;
+}

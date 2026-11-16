@@ -1,0 +1,20 @@
+<section class="section-card friends-card">
+  <div class="icon-badge friends-badge">&#x1F465;</div>
+  <div class="friends-content">
+    <h2>Liste des amis</h2>
+
+    <div class="friend-inputs">
+      @for (friend of friends; track $index; let i = $index) {
+        <input type="text" [(ngModel)]="friends[i]" name="friend-{{ i }}" />
+      }
+    </div>
+
+    <ul class="friends-list">
+      @for (friend of friends; track $index) {
+        <li>{{ friend }}</li>
+      } @empty {
+        <li class="empty">Aucun ami pour le moment.</li>
+      }
+    </ul>
+  </div>
+</section>

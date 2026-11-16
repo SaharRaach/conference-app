@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.notifications-card {
+  border-left: 5px solid var(--accent-notifications);
+}
+
+.notif-badge {
+  background-color: var(--badge-notif-bg);
+  color: #f59e0b;
+}
+
+.count {
+  margin-bottom: 4px;
+}
+
+.notif-btn {
+  font-family: Arial, sans-serif;
+  margin-top: 12px;
+  padding: 4px 10px;
+  background-color: #f3f4f6;
+  border: 1px solid #9ca3af;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.notif-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.details {
+  margin-top: 12px;
+  padding-left: 20px;
+  color: #334155;
+}
+
+.details li {
+  padding: 2px 0;
+}

@@ -1,0 +1,19 @@
+<section class="section-card notifications-card">
+  <div class="icon-badge notif-badge">🔔</div>
+  <div>
+    <h2>Zone de notifications</h2>
+    <p class="count">Vous avez {{ notifications.length }} nouvelles notifications.</p>
+
+    <button type="button" class="notif-btn" (click)="toggleDetails()">
+      {{ showDetails ? 'Masquer les notifications' : 'Afficher les notifications' }}
+    </button>
+
+    @if (showDetails) {
+      <ul class="details">
+        @for (notification of notifications; track notification) {
+          <li>{{ notification }}</li>
+        }
+      </ul>
+    }
+  </div>
+</section>

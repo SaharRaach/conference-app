@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.app-footer {
+  background-color: var(--navy-dark);
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 0.85rem;
+  margin-top: 24px;
+}
